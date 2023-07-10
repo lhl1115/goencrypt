@@ -1,7 +1,7 @@
 # go-api-encrypt
 简体中文 | [English](README-EN.md)
 
-go语言接口加密中间件，支持gin和go-zero框架
+go语言接口加密中间件，给出了gin框架的示例，其他框架可以参考
 
 本项目主要是提供一个加密思路和方法的工程演示，具体的加密方式可以自己实现
 
@@ -31,13 +31,10 @@ Json参数过于复杂的情况下没有经过测试
 [Gin](https://github.com/gin-gonic/gin)
 gin框架给出了比较完整的示例，可以直接运行
 
-[Go-Zero](https://github.com/zeromicro/go-zero)
-go-zero由于需要生成代码，所以只给出了加密中间件的代码，需要自己添加到项目中
 
 ## 目录结构
 ```
 ├── gin     gin框架中间件示例
-├── go-zero go-zero框架中间件示例
 ├── test    测试用例
 ├── utils   工具函数
 ```

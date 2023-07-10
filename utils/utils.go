@@ -85,19 +85,20 @@ func AnyToString(value interface{}) string {
 	return str
 }
 
-func HTTPPostJson(apiURL string, request []byte, headers map[string]string) (string, error) {
+func HTTPPostJson(apiURL string, request []byte, headers map[string]string) (int, string, error) {
 
+	statusCode := 0
 	client := &http.Client{}
 	req, err := http.NewRequest("POST", apiURL, strings.NewReader(string(request)))
 	if err != nil {
-		return "", err
+		return statusCode, "", err
 	}
 	for key, header := range headers {
 		req.Header.Set(key, header)
 	}
 	resp, err := client.Do(req)
 	if err != nil {
-		return "", err
+		return statusCode, "", err
 	}
 	defer func(Body io.ReadCloser) {
 		err := Body.Close()
@@ -107,8 +108,8 @@ func HTTPPostJson(apiURL string, request []byte, headers map[string]string) (str
 	}(resp.Body)
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return "", err
+		return statusCode, "", err
 	}
 
-	return string(body), nil
+	return resp.StatusCode, string(body), nil
 }

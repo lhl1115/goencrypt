@@ -21,9 +21,13 @@ func TestGinPost(t *testing.T) {
 	aesEncrypt, err := aes.AesCbcEncryptHex([]byte(signText), []byte(utils.AesKey), []byte(utils.AesIv))
 	headers["signature"] = aesEncrypt
 
-	json, err := utils.HTTPPostJson(url, nil, headers)
+	code, json, err := utils.HTTPPostJson(url, nil, headers)
 	if err != nil {
 		t.Error(err)
+		return
+	}
+	if code != 200 {
+		t.Error("code == ", code)
 		return
 	}
 	t.Log(json)

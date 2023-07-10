@@ -1,5 +1,5 @@
 # go-api-encrypt
-Go Language API Encryption Middleware, supporting Gin and Go-Zero frameworks
+Go Language API Encryption Middleware, supporting Gin frameworks
 
 This project provides a demonstration of encryption concepts and methods, and the specific encryption approach can be implemented by yourself.
 
@@ -29,14 +29,10 @@ Complex JSON parameters have not been tested.
 [Gin](https://github.com/gin-gonic/gin)
 The Gin framework provides a complete example that can be run directly.
 
-[Go-Zero](https://github.com/zeromicro/go-zero)
-For Go-Zero, since code generation is required, only the code for the encryption middleware is provided, and you need to add it to your project yourself.
-
 
 ## 目录结构
 ```
 ├── gin     gin framework middleware example
-├── go-zero go-zero framework middleware example
 ├── test    go test
 ├── utils   util functions
 ```
