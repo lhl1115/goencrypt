@@ -2,7 +2,7 @@ package gin
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-api-encrypt/utils"
+	"github.com/lhl1115/go-api-encrypt/utils"
 )
 
 func NewRouter() *gin.Engine {
