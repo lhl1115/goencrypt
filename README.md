@@ -1,4 +1,4 @@
-# go-api-encrypt
+# goencrypt
 简体中文 | [English](README-EN.md)
 
 go语言接口加密中间件，给出了gin框架的示例，其他框架可以参考

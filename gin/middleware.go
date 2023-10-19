@@ -2,7 +2,7 @@ package gin
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/lhl1115/go-api-encrypt/utils"
+	"github.com/lhl1115/goencrypt/utils"
 	"github.com/wumansgy/goEncrypt/aes"
 	"math"
 	"net/http"

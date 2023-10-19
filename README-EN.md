@@ -1,4 +1,4 @@
-# go-api-encrypt
+# goencrypt
 Go Language API Encryption Middleware, supporting Gin frameworks
 
 This project provides a demonstration of encryption concepts and methods, and the specific encryption approach can be implemented by yourself.

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/lhl1115/go-api-encrypt/gin"
+import "github.com/lhl1115/goencrypt/gin"
 
 func main() {
 
