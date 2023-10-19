@@ -1,4 +1,4 @@
-module go-api-encrypt
+module github.com/lhl1115/go-api-encrypt
 
 go 1.16
 
