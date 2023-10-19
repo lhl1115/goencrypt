@@ -1,8 +1,8 @@
 package test
 
 import (
+	"github.com/lhl1115/go-api-encrypt/utils"
 	"github.com/wumansgy/goEncrypt/aes"
-	"go-api-encrypt/utils"
 	"strconv"
 	"testing"
 	"time"
